@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bgacc" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_titik4" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image2"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn"
+        android:backgroundTintMode="add"
+        android:capitalize="none"
+        android:fontFamily="@font/montserratbold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:hapticFeedbackEnabled="false"
+        android:stateListAnimator="@null"
+        android:text="Tambah"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="___"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="2dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <EditText
+        android:id="@+id/inputStatus"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="2dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNama" />
+
+    <TextView
+        android:id="@+id/halo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/montserratbold"
+        android:text="Nama Barang"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputNama"
+        app:layout_constraintStart_toStartOf="@+id/inputNama" />
+
+    <TextView
+        android:id="@+id/halo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/montserratbold"
+        android:text="Jumlah Barang"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputStatus"
+        app:layout_constraintStart_toStartOf="@+id/inputStatus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

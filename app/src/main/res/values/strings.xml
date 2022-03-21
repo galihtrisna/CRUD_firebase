@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CRUD firebase</string>
+    <string name="title_activity_input">InputActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="webclient_id">1091948787977-ri8g3nar6aneb1455sdm66e7tacenpi9.apps.googleusercontent.com</string>
+</resources>
